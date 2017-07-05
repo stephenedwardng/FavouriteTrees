@@ -15,8 +15,8 @@ import java.util.ArrayList;
 
 public class FavouriteTreesAdapter extends ArrayAdapter<Tree> {
 
-    public FavouriteTreesAdapter(Context context, ArrayList<Tree> movies) {
-        super(context, 0, movies);
+    public FavouriteTreesAdapter(Context context, ArrayList<Tree> trees) {
+        super(context, 0, trees);
     }
 
     @Override
@@ -30,7 +30,7 @@ public class FavouriteTreesAdapter extends ArrayAdapter<Tree> {
         TextView ranking = (TextView) listItemView.findViewById(R.id.ranking);
         ranking.setText(currentTree.getRanking().toString());
 
-        TextView name = (TextView) listItemView.findViewById(R.id.title);
+        TextView name = (TextView) listItemView.findViewById(R.id.name);
         name.setText(currentTree.getName());
 
         TextView age = (TextView) listItemView.findViewById(R.id.age);
