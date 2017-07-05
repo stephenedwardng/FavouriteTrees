@@ -25,13 +25,13 @@ public class FavouriteTreesAdapter extends ArrayAdapter<Tree> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.trees_item, parent, false);
         }
 
-        Tree currentMovie = getItem(position);
+        Tree currentTree = getItem(position);
 
         TextView ranking = (TextView) listItemView.findViewById(R.id.ranking);
-        ranking.setText(currentMovie.getRanking().toString());
+        ranking.setText(currentTree.getRanking().toString());
 
         TextView name = (TextView) listItemView.findViewById(R.id.title);
-        name.setText(currentMovie.getName());
+        name.setText(currentTree.getName());
 
         TextView age = (TextView) listItemView.findViewById(R.id.age);
         age.setText(currentTree.getAge().toString());

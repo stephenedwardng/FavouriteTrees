@@ -21,10 +21,10 @@ public class FavouriteTreesActivity extends AppCompatActivity {
         FavouriteTrees favouriteTrees = new FavouriteTrees();
         ArrayList<Tree> list = favouriteTrees.getList();
 
-        FavouriteTreesAdapter movieAdapter = new FavouriteTreesAdapter(this, list);
+        FavouriteTreesAdapter treeAdapter = new FavouriteTreesAdapter(this, list);
 
         ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(movieAdapter);
+        listView.setAdapter(treeAdapter);
     }
 
     public void getTree(View listItem){
@@ -32,10 +32,6 @@ public class FavouriteTreesActivity extends AppCompatActivity {
         StringBuilder sb = new StringBuilder();
         sb.append("Your tree is");
         sb.append(tree.getName());
-
-        Snackbar snackbar = Snackbar.make(listItem, sb.toString(), Snackbar.LENGTH_LONG);
-
-        snackbar.show();
 
     }
 
