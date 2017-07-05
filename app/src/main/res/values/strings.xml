@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyFavouriteTrees</string>
+    <string name="menu_credit">Credit</string>
+    <string name="display_credit">My lovely trees by Eddie Ng</string>
 </resources>
